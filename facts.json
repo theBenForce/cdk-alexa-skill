@@ -1,0 +1,12 @@
+{
+  "facts": [
+    {
+      "category": "lambda",
+      "fact": "AWS Lambda's initial release date was November 2014"
+    },
+    {
+      "category": "dynamo",
+      "fact": "Amazon DynamoDB was initially released in January 2012"
+    }
+  ]
+}

@@ -5,9 +5,9 @@ import * as HelloWorld from '../lib/hello-world-stack';
 test('Empty Stack', () => {
     const app = new cdk.App();
     // WHEN
-    const stack = new HelloWorld.HelloWorldStack(app, 'MyTestStack');
+    const stack = new HelloWorld.HelloWorldStack(app, 'MyTestStack', {skillId: process.env.SKILL_ID!});
     // THEN
     expectCDK(stack).to(matchTemplate({
       "Resources": {}
-    }, MatchStyle.EXACT))
+    }, MatchStyle.NO_REPLACES))
 });

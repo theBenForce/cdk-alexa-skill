@@ -1,0 +1,65 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "awesome cloud facts",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CloudFactIntent",
+                    "slots": [
+                        {
+                            "name": "category",
+                            "type": "FactCatagories"
+                        }
+                    ],
+                    "samples": [
+                        "tell me something about {category}",
+                        "to tell me something new",
+                        "tell me something cool",
+                        "give me a random fact"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "values": [
+                        {
+                            "name": {
+                                "value": "dynamo",
+                                "synonyms": [
+                                    "dynamo d. b."
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lambda"
+                            }
+                        }
+                    ],
+                    "name": "FactCatagories"
+                }
+            ]
+        }
+    },
+    "version": "5"
+}
